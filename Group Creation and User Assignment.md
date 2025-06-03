@@ -57,6 +57,7 @@ getent group nautilus_sftp_users
 Output harus menunjukkan kano sebagai anggota, misalnya: nautilus_sftp_users:x:1001:kano.
 7. Ulangi untuk Setiap Server
 Ulangi langkah 3-6 di stapp01, stapp02, dan stapp03.
+~~~
 8. (Opsional) Otomatisasi dengan Skrip
 dapat menggunakan skrip shell dari jump host:
 #!/bin/bash
