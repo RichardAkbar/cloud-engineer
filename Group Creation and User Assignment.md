@@ -75,11 +75,3 @@ Pastikan grup nautilus_sftp_users ada di /etc/group di setiap server.
 Pastikan kano terdaftar sebagai anggota grup dengan getent group nautilus_sftp_users.
 Verifikasi direktori home kano ada di /home/kano.
 
-Catatan
-
-Selalu gunakan sudo untuk perintah administratif.
-Gunakan -aG pada usermod untuk menghindari penghapusan grup lain.
-Pastikan kredensial SSH benar untuk menghindari error autentikasi.
-
-Penulis
-[Disesuaikan dengan nama Anda atau tim Anda]
