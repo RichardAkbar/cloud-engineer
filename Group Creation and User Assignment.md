@@ -21,19 +21,20 @@ ssh thor@jump_host.stratos.xfusioncorp.com
 Masukkan kata sandi: mjolnir123
 2. Akses Setiap App Server
 Gunakan SSH untuk mengakses masing-masing App server dengan kredensial yang sesuai:
-# Untuk stapp01
+Untuk stapp01
 ssh tony@stapp01
 Kata sandi: Ir0nM@n
 
 Untuk stapp02
 ssh steve@stapp02
-# Kata sandi: Am3ric@
+Kata sandi: Am3ric@
 
 Untuk stapp03
 ssh banner@stapp03
 Kata sandi: BigGr33n
 ~~~
 
+~~~
 3. Buat Grup nautilus_sftp_users
 Di setiap App server, jalankan perintah berikut untuk membuat grup:
 sudo groupadd nautilus_sftp_users
@@ -57,7 +58,7 @@ Output harus menunjukkan kano sebagai anggota, misalnya: nautilus_sftp_users:x:1
 7. Ulangi untuk Setiap Server
 Ulangi langkah 3-6 di stapp01, stapp02, dan stapp03.
 8. (Opsional) Otomatisasi dengan Skrip
-Untuk efisiensi, Anda dapat menggunakan skrip shell dari jump host:
+dapat menggunakan skrip shell dari jump host:
 #!/bin/bash
 SERVERS=("tony@stapp01" "steve@stapp02" "banner@stapp03")
 for server in "${SERVERS[@]}"; do
@@ -73,7 +74,4 @@ done
 Simpan sebagai setup_sftp_users.sh, berikan izin eksekusi (chmod +x setup_sftp_users.sh), lalu jalankan (bash setup_sftp_users.sh).
 Verifikasi
 
-Pastikan grup nautilus_sftp_users ada di /etc/group di setiap server.
-Pastikan kano terdaftar sebagai anggota grup dengan getent group nautilus_sftp_users.
-Verifikasi direktori home kano ada di /home/kano.
-
+~~~
