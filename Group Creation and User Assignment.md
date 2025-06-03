@@ -1,3 +1,4 @@
+### Linux
 Setup Grup dan Pengguna SFTP di App Server Stratos Datacenter
 Deskripsi
 Dokumen ini menjelaskan langkah-langkah untuk membuat grup nautilus_sftp_users dan menambahkan pengguna kano ke grup tersebut di semua App server (stapp01, stapp02, stapp03) di Stratos Datacenter, sesuai dengan tugas administrasi sistem.
@@ -11,7 +12,7 @@ stapp03: banner/BigGr33n
 
 
 Perintah Linux seperti groupadd, useradd, usermod, dan id.
-
+~~~
 Langkah-langkah
 1. Login ke Jump Host
 Dari terminal, login ke jump host:
@@ -22,15 +23,16 @@ Masukkan kata sandi: mjolnir123
 Gunakan SSH untuk mengakses masing-masing App server dengan kredensial yang sesuai:
 # Untuk stapp01
 ssh tony@stapp01
-# Kata sandi: Ir0nM@n
+Kata sandi: Ir0nM@n
 
-# Untuk stapp02
+Untuk stapp02
 ssh steve@stapp02
 # Kata sandi: Am3ric@
 
-# Untuk stapp03
+Untuk stapp03
 ssh banner@stapp03
-# Kata sandi: BigGr33n
+Kata sandi: BigGr33n
+~~~
 
 3. Buat Grup nautilus_sftp_users
 Di setiap App server, jalankan perintah berikut untuk membuat grup:
