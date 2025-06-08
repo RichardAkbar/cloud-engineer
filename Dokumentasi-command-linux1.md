@@ -14,3 +14,7 @@ Verifikasi konfigurasi user
 ~~~
 sudo chage -l mark 
 ~~~
+Menambahkan aturan untuk port 5003/tcp
+~~~
+sudo firewall-cmd --permanent --zone=public --add-port=5003/tcp
+~~~
