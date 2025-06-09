@@ -18,3 +18,8 @@ Menambahkan aturan untuk port 5003/tcp
 ~~~
 sudo firewall-cmd --permanent --zone=public --add-port=5003/tcp
 ~~~
+ untuk mengedit crontab (jadwal cron) milik user root, alias menjadwalkan tugas otomatis yang dijalankan sebagai root
+ ~~~
+ sudo crontab -e
+ ~~~
+ 
